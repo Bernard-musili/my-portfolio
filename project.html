@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bernard Musili - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    body {
+      scroll-behavior: smooth;
+      background-color: #f8f9fa;
+      color: #212529;
+    }
+
+    section {
+      padding-top: 70px;
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+      color: #f8f9fa;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover {
+      color: #ffc107;
+    }
+
+    header.bg-primary {
+      background-color: #0056b3 !important;
+    }
+
+    .testimonial-card {
+      background-color: #ffffff;
+      border: 1px solid #dee2e6;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
+
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Bernard Musili</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navContent" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Welcome to My Portfolio</h1>
+      <p class="lead">Cybersecurity | Digital Forensics | Developer</p>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I’m Bernard Musili, a student of Cybersecurity and Digital Forensics at the Open University of Kenya. I’m passionate about ethical hacking, software development, and building secure systems. I also have a background in education and IT training.</p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="bg-light py-5">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="assets/images/project1.jpg" class="card-img-top" alt="Project 1"/>
+            <div class="card-body">
+              <h5 class="card-title">Library Management System</h5>
+              <p class="card-text">A Java-based system for managing books and transactions in an academic library.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="assets/images/project2.jpg" class="card-img-top" alt="Project 2"/>
+            <div class="card-body">
+              <h5 class="card-title">Network Penetration Test</h5>
+              <p class="card-text">Performed simulated attacks to identify and patch vulnerabilities in a test environment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Testimonials</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="testimonial-card">
+            <p>"Bernard is an exceptionally skilled cybersecurity enthusiast. His professionalism and integrity are unmatched!"</p>
+            <p class="fw-bold mb-0">— Jane Mwikali, Lecturer</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="testimonial-card">
+            <p>"Working with Bernard was a pleasure. His attention to detail in system development and testing is commendable."</p>
+            <p class="fw-bold mb-0">— David Otieno, IT Consultant</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section id="resume" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2>Download Resume</h2>
+      <a href="assets/resume.pdf" class="btn btn-outline-primary mt-3" download>Download My CV</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <div class="mb-3">
+          <label for="name" class="form-label">Your Name</label>
+          <input type="text" class="form-control" id="name" required/>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Your Email</label>
+          <input type="email" class="form-control" id="email" required/>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Your Message</label>
+          <textarea class="form-control" id="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2025 Bernard Musili | Portfolio Website</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Thank you! Your message has been sent.");
+    });
+  </script>
+</body>
+</html>
